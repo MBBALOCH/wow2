@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+  <title>Parallax Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: "Bruno Ace", sans-serif;
+      scroll-behavior: smooth;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: orangered;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .signup-btn {
+      padding: 0.5rem 1rem;
+      background-color: orangered;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #p1 {
+      background-image: url('https://images.unsplash.com/photo-1558985040-ed4d5029dd50?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODkxNjg&ixlib=rb-1.2.1&q=80&quot');
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    #p2 {
+      background-image: url('https://images.unsplash.com/photo-1610128114197-485d933885c5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA2Nzc&ixlib=rb-1.2.1&q=80&quot');
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    #p3 {
+      background-image: url('https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80&quot');
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    #p4 {
+      background-image: url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTExOTg&ixlib=rb-1.2.1&q=80&quot');
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .section.light {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .section.dark {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <button class="signup-btn">Sign Up</button>
+      </nav>
+
+  <div class="parallax" id="p1">DESERT</div>
+
+  <div class="section light">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus reiciendis mollitia voluptatibus culpa fugiat labore fuga ipsum obcaecati repellendus natus! Accusantium non recusandae quidem qui inventore voluptas consectetur odit dolore.</p>
+  </div>
+
+  <div class="parallax" id="p2">
+     MOUNTAIN
+  </div>
+
+  <div class="section light">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt vero sunt mollitia ipsum ipsa dignissimos quod minus laboriosam numquam! Molestiae voluptas sapiente dolorum earum odit mollitia quae, neque similique velit!</p>
+  </div>
+
+  <div class="parallax" id="p3">
+    Thank You
+  </div>
+  <div class="section light">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, hic aliquam. Tenetur minus nobis, qui illum id pariatur a voluptas totam dolores molestias quibusdam facere enim nisi expedita? Recusandae, obcaecati.</p>
+  </div>
+  <div class="parallax" id="p4">
+    GALAXY
+  </div>
+  <div class="section light">
+    <h2>Contact</h2>
+  </div>
+
+</body>
+</html>
